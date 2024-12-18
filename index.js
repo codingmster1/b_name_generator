@@ -14,7 +14,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 function bandNameGenerator(req, res, next) {
   console.log(req.body);
-  bandName = req.body["street"] + req.body["pet"] + req.body["color"] + req.body["food"];
+  bandName = req.body["street"] + req.body["pet"] + req.body["color"]/*  + req.body["food"] */;
   next();
 }
 
@@ -44,7 +44,7 @@ app.get('/', (req, res) => {
 <body>
   <div class="container">
 </div>
-<img class="gif" src="https://media4.giphy.com/media/1xyf0AgjMbvqYkNRRs/giphy.gif">
+<img class="gif_2" src="https://media4.giphy.com/media/1xyf0AgjMbvqYkNRRs/giphy.gif">
 </body>
 
 </html>
